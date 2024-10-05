@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #28a745;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.pronouns-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.pronouns-table th, .pronouns-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.pronouns-table th {
+    background-color: #28a745;
+    color: white;
+}
+
+.pronouns-table td {
+    background-color: #f2f2f2;
+}
+
+.examples ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.examples ul li {
+    background: #e9f5e9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #28a745;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #28a745;
+    color: white;
+    margin-top: 20px;
+}

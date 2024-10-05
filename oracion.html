@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completa Oraciones en Guaraní</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="oracion.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Guaraní Fácil y completa las oraciones</h1>
+        </div>
+       
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Bienvenido a Guaraní Fácil</h2>
+            <p>Completa las oraciones en guaraní y mejora tu conocimiento del idioma de forma interactiva y divertida.</p>
+            <button onclick="iniciarEjercicio()">Comenzar</button>
+        </section>
+
+        <section class="exercise-section" id="exercise-section" style="display: none;">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="exercise-container" id="exercise-container">
+                <!-- Los ejercicios se cargarán aquí dinámicamente -->
+            </div>
+            <button class="submit-btn" onclick="verificarRespuestas()">Verificar Respuestas</button>
+            <div class="result" id="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Guaraní Fácil. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="loracion.js"></script>
+</body>
+</html>

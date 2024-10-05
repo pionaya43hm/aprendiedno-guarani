@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+}
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+nav a {
+    text-decoration: none;
+    color: #28a745;
+    margin: 0 15px;
+    font-size: 18px;
+}
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.subscription, .dictionary {
+    background-color: #e9ecef;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #28a745;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #28a745;
+    color: white;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    margin-top: 20px;
+}

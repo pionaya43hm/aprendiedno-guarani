@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Guaraní</title>
+    <link rel="stylesheet" href="estilki.css">
+</head>
+<body>
+    <!-- Barra de progreso del nivel -->
+    <div id="progress-bar">
+        <span>Nivel <span id="level-number">1</span></span>
+        <div id="progress">
+            <span id="progress-value">1/12</span>
+        </div>
+    </div>
+
+    <!-- Puntaje del jugador -->
+    <div id="score-section">
+        <p>Puntaje: <span id="score">0</span></p>
+        <p id="username">Anónimo</p>
+    </div>
+
+    <!-- Contenedor para los niveles -->
+    <div id="levels-container">
+        <!-- Nivel 1 -->
+        <div id="level1" class="level active">
+            <p>Español: jaguar</p>
+            <div class="option 0" onclick="checkAnswer('jaguarete', 1)">
+                <img src="img/jaguar.webp" alt="Jaguarete">
+                <p>Jaguarete</p>
+            </div>
+            <div class="option" onclick="checkAnswer('tanykati', 1)">
+                <img src="img/abeja.png" alt="Tañykati">
+                <p>Tañykati / Kure ka'aguy / Tajasu</p>
+            </div>
+            <div class="option" onclick="checkAnswer('kururu', 1)">
+                <img src="img/leon.jpg" alt="Kururu">
+                <p>Kururu</p>
+            </div>
+            <div class="option" onclick="checkAnswer('jagua', 1)">
+                <img src="img/perro.jpg" alt="jagua">
+                <p>jagua</p>
+            </div>
+        </div>
+
+        <!-- Nivel2 -->
+        <div id="level2" class="level active" style="display:none">
+            <p>Español: sapo</p>
+            <div class="option" onclick="checkAnswer('kururu', 2)">
+                <img src="img/sapo.jpg" alt="Kururu">
+                <p>Kururu</p>
+            </div>
+            <div class="option" onclick="checkAnswer('jaguarete', 2)">
+                <img src="img/obeja.jpeg" alt="Jaguarete">
+                <p>ovecha</p>
+            </div>
+            <div class="option" onclick="checkAnswer('jaguarete', 2)">
+                <img src="img/caballo.avif" alt="Jaguarete">
+                <p>karai</p>
+            </div>
+            <div class="option" onclick="checkAnswer('jaguarete', 2)">
+                <img src="img/camello.jpg" alt="Jaguarete">
+                <p>kamby</p>
+            </div>
+
+        </div>
+          <!-- Nivel3 -->
+          <div id="level3" class="level active" style="display:none">
+            <p>Español: oso</p>
+            <div class="option" onclick="checkAnswer('kururu', 3)">
+                <img src="img/elefante.avif" alt="jagua">
+                <p>elephant / mbopi</p>
+            </div>
+            <div class="option" onclick="checkAnswer('jaguarete', 3)">
+                <img src="img/piraña.jpg" alt="pira">
+                <p>pira</p>
+            </div>
+            <div class="option" onclick="checkAnswer('jaguarete', 3)">
+                <img src="img/hipopotamo.jpg" alt="Jaguarete">
+                <p>ybyturugua</p>
+            </div>
+            <div class="option" onclick="checkAnswer('mbopia', 3)">
+                <img src="img/oso.jpg" alt="mbopia">
+                <p>mbopia</p>
+            </div>
+
+        </div>
+          <!-- Nivel 4 -->
+          <div id="level4" class="level active" style="display:none">
+            <p>Español: amarillo</p>
+            <div class="option" onclick="checkAnswer('sapy ', 4)">
+                <img src="img/azul.jpg" alt="sapy">
+                <p>sapy</p>
+            </div>
+            <div class="option" onclick="checkAnswer('yryvy', 4)">
+                <img src="img/amarillo.jpg" alt="yryvy">
+                <p>yryvy</p>
+            </div>
+            <div class="option" onclick="checkAnswer('pyta', 4)">
+                <img src="img/negro.jpg" alt="pyta">
+                <p>pyta</p>
+            </div>
+            <div class="option" onclick="checkAnswer('hendy', 4)">
+                <img src="img/verde.jpg" alt="hendy">
+                <p>hendy</p>
+            </div>
+
+        </div>
+          <!-- Nivel 5 -->
+          <div id="level5" class="level active" style="display:none">
+            <p>Español: gato</p>
+            <div class="option" onclick="checkAnswer('guasu', 5)">
+                <img src="images/venado.jpg" alt="guasu">
+                <p>guasu</p>
+            </div>
+            <div class="option" onclick="checkAnswer('mbarakaja', 5)">
+                <img src="images/gato.jpg" alt="mbarakaja">
+                <p>mbarakaja</p>
+            </div>
+            <div class="option" onclick="checkAnswer('apakani', 5)">
+                <img src="images/murcielago.png" alt="apakani">
+                <p>bat</p>
+            </div>
+            <div class="option" onclick="checkAnswer('apakani', 5)">
+                <img src="images/aguila.jpg" alt="apakani">
+                <p>apakani</p>
+            </div>
+
+        </div>
+          <!-- Nivel 6 -->
+          <div id="level6" class="level active" style="display:none">
+            <p>Español: numero uno </p>
+            <div class="option" onclick="checkAnswer('peteĩ', 6)">
+                <img src="images/uno.png" alt="peteĩ">
+                <p>peteĩ</p>
+            </div>
+            <div class="option" onclick="checkAnswer('mokõi', 6)">
+                <img src="images/dos.jpg" alt="mokõi">
+                <p>mokõi</p>
+            </div>
+            <div class="option" onclick="checkAnswer('mbohapy', 6)">
+                <img src="images/tres.jpg" alt="mbohapy">
+                <p>mbohapy</p>
+            </div>
+            <div class="option" onclick="checkAnswer('irundy', 6)">
+                <img src="images/cuatro.jpg" alt="irundy">
+                <p>irundy</p>
+            </div>
+
+        </div>
+          <!-- Nivel 7 -->
+          <div id="level7" class="level active" style="display:none">
+            <p>Español: numero 7</p>
+            <div class="option" onclick="checkAnswer('po/correos', 7)">
+                <img src="images/cinco.jpg" alt="po/correos">
+                <p>po/ correos</p>
+            </div>
+            <div class="option" onclick="checkAnswer('poteĩ', 7)">
+                <img src="images/seis.jpg" alt="poteĩ">
+                <p>poteĩ</p>
+            </div>
+            <div class="option" onclick="checkAnswer('pokõi/poguasu', 7)">
+                <img src="images/siete.jpg" alt="pokõi/poguasu">
+                <p>pokõi/poguasu</p>
+            </div>
+            <div class="option" onclick="checkAnswer('poapy/poitou', 7)">
+                <img src="images/ocho.jpg" alt="poapy/poitou">
+                <p>poapy/ poitou</p>
+            </div>
+
+        </div>
+
+  <!-- Nivel 8 -->
+        <div id="level8" class="level active" style="display:none">
+            <p>Español: numero doce </p>
+            <div class="option" onclick="checkAnswer('porundy / poko', 8)">
+                <img src="images/nueve.png" alt="porundy/ poko">
+                <p>porundy/ poko</p>
+            </div>
+            <div class="option" onclick="checkAnswer('pa / peteĩ /pensilvania', 8)">
+                <img src="images/diez.jpg" alt="pa / peteĩ /pensilvania">
+                <p>pa / peteĩ /pensilvania</p>
+            </div>
+            <div class="option" onclick="checkAnswer('pa mbohapy', 8)">
+                <img src="images/once.jpg" alt="pa mbohapy">
+                <p>pa mbohapy</p>
+            </div>
+            <div class="option" onclick="checkAnswer('pakõi/Mokõi pa', 8)">
+                <img src="images/doce.jpg" alt="pakõi/Mokõi pa ">
+                <p>pakõi/Mokõi pa </p>
+            </div>
+
+        </div>
+          <!-- Nivel 9 -->
+          <div id="level9" class="level active" style="display:none">
+            <p>Español: morado</p>
+            <div class="option" onclick="checkAnswer('pytãũ/ mberu', 9)">
+                <img src="images/morado.avif" alt="pytãũ/ mberu">
+                <p>pytãũ/ mberu</p>
+            </div>
+            <div class="option" onclick="checkAnswer('morotĩ/pytã', 9)">
+                <img src="images/blanco.jpeg" alt="morotĩ/pytã">
+                <p>morotĩ/pytã </p>
+            </div>
+            <div class="option" onclick="checkAnswer('yvagá hovy/pitón', 9)">
+                <img src="images/celeste.jpeg" alt="yvagá hovy/pitón">
+                <p>yvagá hovy/pitón</p>
+            </div>
+            <div class="option" onclick="checkAnswer('kape', 9)">
+                <img src="images/cafe.avif" alt="kape">
+                <p>kape</p>
+            </div>
+
+        </div>
+          <!-- Nivel 10 -->
+          <div id="level10" class="level active" style="display:none">
+            <p>Español: Mamá</p>
+            <div class="option" onclick="checkAnswer('makychĩ/ tata', 10)">
+                <img src="img/papa.jpeg" alt="makychĩ/ tata">
+                <p>makychĩ/ tata</p>
+            </div>
+            <div class="option" onclick="checkAnswer('pyti’a/ syka', 10)">
+                <img src="img/mama.png" alt="pyti’a/ syka">
+                <p>pyti’a/ syka</p>
+            </div>
+            <div class="option" onclick="checkAnswer('mitãkuña’i/karai', 10)">
+                <img src="img/niña.jpg" alt="mitãkuña’i/karai">
+                <p>mitãkuña’i/karai</p>
+            </div>
+            <div class="option" onclick="checkAnswer('jaguarete', 10)">
+                <img src="img/niño.jpg" alt="Jaguarete">
+                <p>mitã/</p>
+            </div>
+
+        </div>
+          <!-- Nivel 11 -->
+          <div id="level11" class="level active" style="display:none">
+            <p>Español: estudiante</p>
+            <div class="option" onclick="checkAnswer('mitãrusumbo’ehao', 11)">
+                <img src="img/colegio.jpg" alt="mitãrusumbo’ehao">
+                <p>mitãrusumbo’ehao</p>
+            </div>
+            <div class="option" onclick="checkAnswer('mbo’ehára/ tendota', 11)">
+                <img src="img/maestro.jpeg" alt="mbo’ehára/ tendota">
+                <p>mbo’ehára/ tendota</p>
+            </div>
+            <div class="option" onclick="checkAnswer('temimbo’e/ ñemoaranduhara', 11)">
+                <img src="img/estudiante.jpeg" alt="temimbo’e/ ñemoaranduhara">
+                <p>temimbo’e/ ñemoaranduhara</p>
+            </div>
+            <div class="option" onclick="checkAnswer('myakãhára/moakãhára', 11)">
+                <img src="img/director.jpg" alt="myakãhára/moakãhára">
+                <p>myakãhára/moakãhára</p>
+            </div>
+
+        </div>
+          <!-- Nivel 12 -->
+          <div id="level12" class="level active" style="display:none">
+            <p>Español: cabeza </p>
+            <div class="option" onclick="checkAnswer('pó/ pópe', 12)">
+                <img src="img/mano.png" alt="pó/ pópe">
+                <p>pó/ pópe</p>
+            </div>
+            <div class="option" onclick="checkAnswer('yvyra/ pí', 12)">
+                <img src="img/pie.jpg" alt="yvyra/ pí">
+                <p>yvyra/ pí</p>
+            </div>
+            <div class="option" onclick="checkAnswer('akãry/akã', 12)">
+                <img src="img/cabeza.avif" alt="akãry/akã">
+                <p>akãry/akã</p>
+            </div>
+            <div class="option" onclick="checkAnswer('aña/ aña’i', 12)">
+                <img src="img/nariz.jpg" alt="aña/ aña’i">
+                <p>aña/ aña’i</p>
+            </div>
+            <div id="congratulations" style="display:none;">
+                <h1>¡Felicidades!</h1>
+                <p>Gracias por aprender el lenguaje guaraní con nosotros.</p>
+                <button id="restart">Jugar de nuevo</button>
+            </div>
+
+        </div>
+      
+    </div>
+   
+
+    <!-- Resultado y mensaje -->
+    <p id="result"></p>
+
+    <!-- Script para manejar la interacción del juego -->
+    <script src="crea.js"></script>
+</body>
+</html> 

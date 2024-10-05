@@ -1,0 +1,89 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-image: url('https://ejemplo.com/fondo-bolivia.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección del himno */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.himno h2 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.letra-himno {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.3em;
+}
+
+.letra-himno p {
+    margin-bottom: 10px;
+}
+
+.letra-himno strong {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Reproductor de audio */
+.audio-himno {
+    text-align: center;
+    margin-top: 30px;
+}
+
+audio {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #28a745;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
